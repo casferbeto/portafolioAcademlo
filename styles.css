@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;500;700&display=swap');
+
+
+:root {
+    --color1: #8e7bef;
+    --color2: #5d3bef;
+    --color3: #f9f6ff;
+    --color4: #222222;
+    --color5: #423f40;
+    --color6: #ffffff;
+    --color7: #f9f5f2;
+
+    font-family: 'Montserrat';
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    background-color: var(--color3);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.menu{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: var(--color3);
+
+    transform: translateX(-150%);
+    transition: transform 0.5s;
+}
+.menu_show{
+    transform: translateX(0);
+}
+
+.bx-menu{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+body{
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.inicio .img {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.inicio .img-me {
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+.inicio .description h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+.inicio .description p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 24px;
+    color: var(--color5);
+}
+
+.inicio .iconos .icono-redes {
+
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 20px auto;
+   
+ 
+ 
+}
+.inicio .iconos .icono-redes a{
+    color: white;
+    font-size: 2.5rem;
+    background-color: var(--color1);
+    border-radius: 50%;
+    padding: .5rem;
+    margin: 0 auto;
+    
+}
+
+
+.inicio .iconos .contact{
+    display: flex;
+    justify-content: center;
+}
+
+.inicio .iconos .contact .btn {
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 65%;
+    padding: 1rem;
+    border: none;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.bx-envelope{
+    margin-right: 20px;
+}
+
+.inicio .iconos .contact .btn span{
+    text-align: center;
+}
+
+.about{
+    margin-top: 100px;  
+}
+
+.about .about-title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 600;
+}
+
+.about .about-p{
+    text-align: justify;
+    margin: 0 auto;
+    color: var(--color5);
+    line-height: 1.5rem;
+    width: 60%;
+}
+
+.experience-title{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-size: 600;
+    margin-top: 6rem;
+}
+
+.box{
+    background-color: var(--color7);
+    
+  
+    
+}
+.experience_box{
+    display: flex;
+    
+  
+   
+}
+
+.experience_box_paragraph{
+    text-align: justify;
+}
+
+.box1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    
+}
+
+.box2, .box3{
+    
+    width: 50%;
+    height: auto;
+    background-color: var(--color3);
+}
+
+.box2{
+    margin-left: 10px;
+}
+
+.box1 .box2 .box_container{
+    display: flex;
+    text-align: center;
+    margin: 30px 20px;
+
+}
+
+.box_icon{
+    padding-right: 1rem;
+}
+
+.box_paragraph{
+    text-align: left;
+    margin: 30px 30px;
+}
+
+.title_experiencia{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px auto;
+    gap: 4rem;
+}
+.experiencia .title_box{
+    margin: 60px;
+    text-align: center;
+    font-size: 2rem;  
+}
+
+.box_experience{
+    display: flex;
+    margin: 0 80px;
+    justify-content: space-between;
+}
+.box1amazon{
+    flex-direction: column;
+
+}
+
+.img_experience{
+    margin-right: 25px;
+}
+.tiempo_experience{
+    text-align: left;
+}
+
+.portafolio h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 60px auto;
+}
+
+.portafolio .img_portafolio{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: auto 60px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contacto h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 60px;
+
+}
+
+.boxcontacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.contacto_box{
+    background-color: var(--color7);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+ margin: auto auto;
+
+}
+
+.img_contacto{
+    align-content: center;
+    margin: 22px 10px;
+}
+
+.contacto_datos p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contacto_datos span{
+    font-size: 1.2rem;
+    color: #DDDDDD;
+    font-weight: 400
+}
+
+footer{
+    text-align: center;
+    color: var(--color2);
+    margin: 200px auto;
+    font-size: 2rem;
+}
+
+@media (min-width: 750px){
+    .bx-menu{
+        display: none;
+    }
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        transform: translateY(0);
+    }
+    .portafolio .img_portafolio{
+        flex-direction: row;
+        justify-content: center; 
+    }
+    .inicio{
+        display: flex;
+        margin-top: 100px;
+    }
+    .inicio .img{
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .about-p{
+        width: 100%;
+        text-align: none;
+
+    }
+    .title_experiencia{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .tiempo_experience{
+        margin-left: 100px;
+        text-align: center;
+    }
+    
+}
